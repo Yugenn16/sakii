@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loading">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </div>
+
+  <h1 class="welcome-title">WELCOME JOPAY!!</h1>
+
+  <button id="addLetterBtn" class="add-btn">Add New Letter</button>
+
+  <div class="envelopes-container" id="envelopesContainer">
+    <!-- Envelopes will be generated here -->
+  </div>
+
+  <!-- Add Letter Form -->
+  <div id="addForm" class="add-form">
+    <h2>Add New Letter</h2>
+    <input type="text" id="newTitle" placeholder="Letter Title" required>
+    <textarea id="newContent" placeholder="Letter Content" required></textarea>
+    <button id="submitBtn">Add Letter</button>
+    <button id="cancelBtn">Cancel</button>
+  </div>
+
+  <!-- Edit Letter Form -->
+  <div id="editForm" class="add-form">
+    <h2>Edit Letter</h2>
+    <input type="text" id="editTitle" placeholder="Letter Title" required>
+    <textarea id="editContent" placeholder="Letter Content" required></textarea>
+    <button id="updateBtn">Update Letter</button>
+    <button id="editCancelBtn">Cancel</button>
+  </div>
+
+  <!-- Sounds -->
+  <audio id="bgMusic" src="sound/bgmusic.mp3" loop preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
